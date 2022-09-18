@@ -1,7 +1,7 @@
 "use strict"
 function solveEquation(a, b, c) {
   let arr = [];
-  let discriminant = Math.pow(b, 2) - 4 * a * c; //формула рассчет дискриминанта
+  let discriminant = Math.pow(b, 2) - 4 * a * c;
   
   if (discriminant > 0) {
     let meaning1 = (-b + Math.sqrt(discriminant)) / (2 * a);
@@ -12,7 +12,6 @@ function solveEquation(a, b, c) {
     let meaning1 = -b / (2 * a);
     arr.push(meaning1);
   }
-  // код для задачи №1 писать здесь
   return arr; // array
 }
 
