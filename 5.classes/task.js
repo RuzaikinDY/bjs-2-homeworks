@@ -40,9 +40,7 @@ class PrintEditionItem {
       this.type = "book";
     }
   }
-  // printItem = new Book('Дж. Р. Р. Толкиен', 'Сильмарилион', 2015, 432);
-  // console.log(printItem.author)
-  
+    
   class NovelBook extends Book {
     constructor(name, releaseDate, pagesCount) {
       super(name, releaseDate, pagesCount);
@@ -91,7 +89,7 @@ class PrintEditionItem {
         return null;
       } else {
         let bookToReturn = this.books[getBook];
-        this.books.splice(getBook);
+        this.books.splice(getBook,1);
         return bookToReturn;
       }
     }
